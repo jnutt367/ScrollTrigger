@@ -21,6 +21,7 @@ body {
     position: absolute;
     top: 120px;
     left: 40px;
+    font-size: 70px;
 }
 
 #freds {
@@ -30,11 +31,20 @@ body {
 }
 
 #freds img {
-    width: 122px;
+    width: 125px;
 }
 
 #time {
     position: absolute;
     top: 25px;
     right: 0;
+}
+
+@media (max-width: 800px) {
+    #freds img {
+        width: 70px;
+    }
+    #title {
+        width: 85%;
+    }
 }
