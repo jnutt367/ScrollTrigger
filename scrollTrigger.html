@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollTrigger Learning</title>
+    <style>
+        body {
+            display: grid;
+            grid-gap: 700px;
+        }
+        
+        .a {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+        }
+        
+        .b {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+        }
+        
+        .c {
+            height: 150px;
+            width: 150px;
+            background-color: green;
+        }
+        
+        .next {
+            background-color: black;
+            height: 1000px;
+        }
+        
+        .a {
+            text-decoration: none;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A ScrollTrigger Introduction:</h1>
+    <div class="box a">a</div>
+    <div class="box b">b</div>
+    <div class="box c">c</div>
+    <div class="next"></div>
+    <!--
+    <img id="fred" src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred.svg'>
+    <img id="purple" src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-purple.svg'>
+    <img id="blue" src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-blue.svg'>
+    <img id="pink" src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-pink.svg'>
+    <img id="orange" src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-orange.svg'>
+    <img id="red" src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-red.svg'>
+-->
+    <a href="index.html">
+        <h4>HOME</h4>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+    <script>
+        gsap.to(".c", {
+            scrollTrigger: {
+                trigger: ".c",
+                start: "20px 80%",
+                markers: true,
+                toggleActions: "restart pause reverse pause"
+            },
+            x: 400,
+            rotation: 360,
+            duration: 5
+        });
+    </script>
+</body>
+
+</html>
