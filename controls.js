@@ -7,6 +7,7 @@ var animation = gsap.timeline()
     .to("#red", { x: -200, y: -50, rotate: "360", scale: "2" })
     .to("#fred", { duration: 2, x: 200, y: -40, rotate: "-360", scale: "1.5", ease: "elastic" })
     .to("#orange", { duration: ".5", x: "-220", })
+    .to("h3", { duration: "2", scale: 2.3, y: -230, ease: "back", textDecoration: "none", color: "red" })
 
 
 

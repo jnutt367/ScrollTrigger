@@ -3,9 +3,11 @@ body {
     font-family: 'Kanit', sans-serif;
     background: black;
     opacity: 1;
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 300px;
     height: 100vh;
     z-index: 1;
 }
