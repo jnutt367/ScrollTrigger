@@ -1,4 +1,4 @@
-gsap.set("#demo", { scale: "0.6" });
+gsap.set("#demo", { scale: "1.2" });
 
 gsap.timeline()
     .from("#demo", { duration: 1, opacity: 0 })
