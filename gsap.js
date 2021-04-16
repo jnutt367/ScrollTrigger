@@ -1,4 +1,5 @@
 gsap.set("#demo", { scale: "1.2" });
+gsap.to("#wrapper", { y: -200 });
 
 gsap.timeline()
     .from("#demo", { duration: 1, opacity: 0 })
